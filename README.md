@@ -13,9 +13,9 @@ gh repo clone gharishkumar/read-aloud_for_blind
    **or**
  - Download the zip from the repository and unzip
 ```bash
-wget https://github.com/gharishkumar/read-aloud_for_blind/archive/master.zip
-unzip master.zip
-cd read-aloud_for_blind-master
+wget https://github.com/gharishkumar/read-aloud_for_blind/archive/main.zip
+unzip main.zip
+cd read-aloud_for_blind-main
 ```
  - Install required packages by
 ```bash
@@ -44,6 +44,7 @@ cd read-aloud_for_blind-master
 
 
 # Modules used
+ - [open cv](https://opencv.org/)
  - [tesseract-ocr](https://github.com/tesseract-ocr/tesseract)
  - [festvox](https://github.com/festvox/festvox) & [doc](http://www.festvox.org/flite/index.html)
 # Reference
