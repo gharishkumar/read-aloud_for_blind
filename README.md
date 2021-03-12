@@ -23,6 +23,11 @@ cd read-aloud_for_blind-master
 ```
 
 ## Setup
+ - Enable pi camera
+```bash
+ sudo raspi-config
+```
+![Enable camera](https://www.pyimagesearch.com/wp-content/uploads/2015/03/raspi_config-1024x768.jpg)
  - Connect the `circuit` as shown
 ![Circuit diagram](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/read-aloud_for_blind_bb.png)
 
