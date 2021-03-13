@@ -31,7 +31,9 @@ cd read-aloud_for_blind-main
 ```bash
  sudo raspi-config
 ```
-  ![Enable camera](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/enable%20pi-camera.png)
+<p align="center">
+  <img src="https://github.com/gharishkumar/read-aloud_for_blind/raw/main/enable%20pi-camera.png" alt="Sublime's custom image"/>
+</p>
 
 ## Testing
  - Run `read-aloud_for_blind_final.py`
