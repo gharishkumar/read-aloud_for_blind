@@ -5,7 +5,7 @@ This helps blind to read text.
 
 ## Circuit diagram
  - Connect the `circuit` as shown
-![Circuit diagram](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/read-aloud_for_blind-layout_bb.png)
+  ![Circuit diagram](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/read-aloud_for_blind-layout_bb.png)
 
 ## Installation
  - [Install RaspberryPi OS](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
@@ -31,10 +31,10 @@ cd read-aloud_for_blind-main
 ```bash
  sudo raspi-config
 ```
-![Enable camera](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/enable%20pi-camera.png)
+  ![Enable camera](https://github.com/gharishkumar/read-aloud_for_blind/raw/main/enable%20pi-camera.png)
 
 ## Testing
- - Run `read-aloud_for_blind.py`
+ - Run `read-aloud_for_blind_final.py`
 ```bash
  python3 read-aloud_for_blind_final.py
 ```
@@ -42,7 +42,7 @@ cd read-aloud_for_blind-main
  - Press the button
  - You should here the text read-aloud
 ## Run at startup
- - Add `read-aloud_for_blind.py` to [*startup*](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+ - Add `read-aloud_for_blind_final.py` to [*startup*](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
 
 
 # Modules used
