@@ -2,9 +2,11 @@ import os
 os.system('echo Welcome Harish | festival --tts')
 from gpiozero import Button
 import pytesseract
-from picamera.array import PiRGBArray
-from picamera import PiCamera
-import cv2
+from imutils.video import VideoStream  
+import imutils
+usingPiCamera = True
+frameSize = (320, 240)
+vs = VideoStream(src=0, usePiCamera=usingPiCamera, resolution=frameSize,framerate=32).start()
 import re
 
 camera = PiCamera()
@@ -15,8 +17,7 @@ os.system('echo Initilization sucessful, press the button to start reading | fes
 while True:
     if button.is_pressed:
         os.system('echo button pressed | festival --tts')
-        camera.capture(rawCapture, format="bgr")
-		frame = rawCapture.array
+        frame = vs.read()
         raw_text = pytesseract.image_to_string(frame, config='')
         #print(repr(raw_text))
         text = re.sub('[^a-zA-Z]', ' ', raw_text)
